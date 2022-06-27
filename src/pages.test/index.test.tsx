@@ -10,9 +10,9 @@ describe('Index page', () => {
     it('should have h1 tag', () => {
       render(<Index />);
 
-      const heading = screen.getByRole('heading');
+      const heading = screen.getAllByRole('heading');
 
-      expect(heading).toBeInTheDocument();
+      expect(heading.length).toBeGreaterThan(0);
     });
   });
 });

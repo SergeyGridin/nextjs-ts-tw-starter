@@ -1,16 +1,13 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import type { NextSeoProps } from 'next-seo';
 import { NextSeo } from 'next-seo';
 
-import { AppConfig } from '@/utils/AppConfig';
+import { AppConfig } from '@/config/AppConfig';
 
-type IMetaProps = {
-  title: string;
-  description: string;
-  canonical?: string;
-};
+type MetaProps = NextSeoProps;
 
-const Meta = (props: IMetaProps) => {
+const Meta = (props: MetaProps) => {
   const router = useRouter();
 
   return (

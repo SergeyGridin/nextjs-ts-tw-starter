@@ -66,7 +66,7 @@ export function Faqs() {
       <h2 id="faq-title" className="sr-only">
         Frequently asked questions
       </h2>
-      <div className="absolute top-0 left-1/2 translate-x-[30%] translate-y-[25%]">
+      <div className="absolute top-0 left-1/2 translate-x-[-30%] translate-y-[-25%]">
         <ExportedImage
           src={'assets/images/background-faqs.jpg'}
           alt=""

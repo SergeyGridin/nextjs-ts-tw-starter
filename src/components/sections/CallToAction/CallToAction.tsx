@@ -8,7 +8,7 @@ export function CallToAction() {
       id="get-started-today"
       className="relative overflow-hidden bg-blue-600 py-32"
     >
-      <div className="absolute top-1/2 left-1/2 translate-x-[50%] translate-y-[50%]">
+      <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
         <ExportedImage
           src={'/assets/images/background-call-to-action.jpg'}
           alt=""

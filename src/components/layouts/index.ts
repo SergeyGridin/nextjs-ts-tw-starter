@@ -1,3 +1,4 @@
+export * from './AuthLayout/AuthLayout';
 export * from './Footer/Footer';
 export * from './Header/Header';
-export * from './Main/Meta';
+export * from './Main/Main';

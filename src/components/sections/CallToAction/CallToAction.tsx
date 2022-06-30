@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 import { ButtonLink, Container } from '@/components/elements';
 
@@ -9,13 +9,12 @@ export function CallToAction() {
       className="relative overflow-hidden bg-blue-600 py-32"
     >
       <div className="absolute top-1/2 left-1/2 translate-x-[50%] translate-y-[50%]">
-        <Image
+        <ExportedImage
           src={'/assets/images/background-call-to-action.jpg'}
           alt=""
           width={2347}
           height={1244}
           layout="fixed"
-          unoptimized
         />
       </div>
       <Container className="relative">

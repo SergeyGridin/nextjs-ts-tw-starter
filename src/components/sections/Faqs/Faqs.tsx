@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 import { Container } from '@/components/elements';
 
@@ -66,14 +66,13 @@ export function Faqs() {
       <h2 id="faq-title" className="sr-only">
         Frequently asked questions
       </h2>
-      <div className="absolute top-0 left-1/2 -translate-x-[30%] -translate-y-[25%]">
-        <Image
+      <div className="absolute top-0 left-1/2 translate-x-[30%] translate-y-[25%]">
+        <ExportedImage
           src={'assets/images/background-faqs.jpg'}
           alt=""
           width={1558}
           height={946}
           layout="fixed"
-          unoptimized
         />
       </div>
       <Container className="relative">

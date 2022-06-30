@@ -1,6 +1,6 @@
 import { Tab } from '@headlessui/react';
 import clsx from 'clsx';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import { useEffect, useState } from 'react';
 
 import { Container } from '@/components/elements';
@@ -10,7 +10,8 @@ const features = [
     title: 'Payroll',
     description:
       "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: '/assets/images/screenshots/payroll.png',
+    image:
+      'https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.517af4e7.png&w=2048&q=75',
   },
   {
     title: 'Claim expenses',
@@ -61,13 +62,13 @@ export function PrimaryFeatures() {
       className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
     >
       <div className="absolute top-1/2 left-1/2 translate-x-[44%] translate-y-[42%]">
-        <Image
+        <ExportedImage
           src={'/background-features.jpg'}
           alt=""
           width={2245}
           height={1636}
           layout="fixed"
-          unoptimized
+          // unoptimized
         />
       </div>
       <Container className="relative">
@@ -144,7 +145,7 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="relative mt-10 aspect-[1085/730] w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
+                      <ExportedImage
                         src={feature.image}
                         alt=""
                         layout="fill"

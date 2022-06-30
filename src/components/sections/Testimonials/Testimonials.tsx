@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 import { Container } from '@/components/elements';
 
@@ -116,7 +116,7 @@ export function Testimonials() {
                           </div>
                         </div>
                         <div className="relative h-14 w-14 overflow-hidden rounded-full bg-slate-50">
-                          <Image
+                          <ExportedImage
                             src={testimonial.author.image}
                             alt=""
                             layout="fill"

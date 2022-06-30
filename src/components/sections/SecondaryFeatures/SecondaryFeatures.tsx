@@ -167,20 +167,25 @@ function FeaturesDesktop() {
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
-              <Feature
+              <Tab
+                className="[&:not(:focus-visible)]:focus:outline-none"
                 key={feature.name}
-                feature={{
-                  ...feature,
-                  name: (
-                    <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                      <span className="absolute inset-0" />
-                      {feature.name}
-                    </Tab>
-                  ),
-                }}
-                isActive={featureIndex === selectedIndex}
-                className="relative"
-              />
+                as="div"
+              >
+                <Feature
+                  feature={{
+                    ...feature,
+                    name: (
+                      <>
+                        <span className="absolute inset-0" />
+                        {feature.name}
+                      </>
+                    ),
+                  }}
+                  isActive={featureIndex === selectedIndex}
+                  className="relative"
+                />
+              </Tab>
             ))}
           </Tab.List>
           <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
